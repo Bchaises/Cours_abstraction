@@ -1,6 +1,6 @@
 package Bchaises;
 
-public class Vehicule {
+public abstract class Vehicule {
 
     // attributs
     protected int num_serie;
@@ -34,12 +34,14 @@ public class Vehicule {
     public void setMoteur_allume(boolean m) { this.moteur_allume = m; }
 
     // méthodes
-    public void demarrer(){
-        this.moteur_allume = true;
-    }
+    public abstract void demarrer();
 
-    public void accelerer(){
-        this.vitesse++;
+    public abstract void accelerer();
+
+    @Override
+    public String toString(){
+        String res = "Un super vehicule";
+        return res;
     }
 
 }

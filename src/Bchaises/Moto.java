@@ -28,4 +28,15 @@ public class Moto extends Vehicule{
     public void altererBequille(){
         this.bequille_enclenche = false;
     }
+
+    @Override
+    public void demarrer(){
+        System.out.println("Démarrage moto");
+        this.moteur_allume = true;
+    }
+
+    @Override
+    public void accelerer(){
+        this.vitesse++;
+    }
 }

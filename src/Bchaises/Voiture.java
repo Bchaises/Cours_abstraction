@@ -1,6 +1,6 @@
 package Bchaises;
 
-public class Voiture extends Vehicule{
+public class Voiture extends VehiculePorte{
 
     // attributs
     private int nombre_portes;
@@ -8,22 +8,27 @@ public class Voiture extends Vehicule{
     // constructeur
     public Voiture(){
         super();
-        this.nombre_portes = 0;
     }
 
     // constructeur pramétré
     public Voiture(int s, boolean m, int v, int n){
-        super(s,m,v);
-        this.nombre_portes = n;
+        super(s,m,v,n);
     }
 
     // accesseur
     // getter
-    public int getNombre_portes(){ return this.nombre_portes; }
 
     // setter
-    public void setNombre_portes(int n) { this.nombre_portes = n; }
 
     // méthodes
+    @Override
+    public void demarrer(){
+        System.out.println("Démarrage voiture");
+        this.moteur_allume = true;
+    }
 
+    @Override
+    public void accelerer(){
+        this.vitesse++;
+    }
 }
