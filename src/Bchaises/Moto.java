@@ -12,8 +12,8 @@ public class Moto extends Vehicule{
     }
 
     // constructeur paramétré
-    public Moto( int i, boolean m, int v, boolean b){
-        super(i, m, v);
+    public Moto( int s, boolean m, int v, boolean b){
+        super(s, m, v);
         this.bequille_enclenche = b;
     }
 

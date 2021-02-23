@@ -6,6 +6,7 @@ public class Vehicule {
     protected int num_serie;
     protected boolean moteur_allume;
     protected int vitesse;
+    private static int COMPTEUR = 0;
 
     // constructeur
     public Vehicule() {
@@ -15,10 +16,11 @@ public class Vehicule {
     }
 
     // constructeur paramétré
-    public Vehicule(int i, boolean m, int v){
-        this.num_serie = i;
+    public Vehicule(int s, boolean m, int v){
+        this.num_serie = s;
         this.moteur_allume = m;
         this.vitesse = v;
+        COMPTEUR++;
     }
 
     // accesseur
@@ -37,7 +39,6 @@ public class Vehicule {
     }
 
     public void accelerer(){
-        int nbreAleatoire = (int)Math.random() * (1 - 5);
         this.vitesse++;
     }
 

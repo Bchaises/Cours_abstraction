@@ -12,8 +12,8 @@ public class Voiture extends Vehicule{
     }
 
     // constructeur pramétré
-    public Voiture(int i, boolean m, int v, int n){
-        super(i,m,v);
+    public Voiture(int s, boolean m, int v, int n){
+        super(s,m,v);
         this.nombre_portes = n;
     }
 

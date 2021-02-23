@@ -16,8 +16,8 @@ public class CamionBenne extends Vehicule{
     }
 
     // constructeur paramétré
-    public CamionBenne(int i, boolean m, int v, int n, int c, boolean p ) {
-        super(i, m, v);
+    public CamionBenne(int s, boolean m, int v, int n, int c, boolean p ) {
+        super(s, m, v);
         this.nombre_portes = n;
         this.contenance_benne = c;
         this.pin_bloque = p;
