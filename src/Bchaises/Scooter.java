@@ -25,8 +25,12 @@ public class Scooter extends Moto{
     public void setVitesse_max(int vm) { this.vitesse_max = vm; }
 
     // méthodes
+    @Override
     public void demarrer(){
         System.out.println("Démarrage scooter");
         this.moteur_allume = true;
     }
+
+    @Override
+    public void accelerer() { this.vitesse++; }
 }
